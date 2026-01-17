@@ -1,12 +1,15 @@
 /* eslint-disable no-console */
 // Author: TrungQuanDev: https://youtube.com/@trungquandev
 
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import dotenvExpand from 'dotenv-expand';
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { corsOptions } from '~/config/corsOptions';
 import { APIs_V1 } from '~/routes/v1/';
+
+dotenvExpand.expand(dotenv.config());
 
 const START_SERVER = () => {
   // Init Express App

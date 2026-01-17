@@ -1,6 +1,6 @@
 // Author: TrungQuanDev: https://youtube.com/@trungquandev
 import { Resend } from 'resend';
-
+import 'dotenv/config';
 const env = process.env;
 
 class ResendService {
@@ -10,7 +10,7 @@ class ResendService {
     this.#instance = new Resend(env.RESEND_API_KEY);
   }
 
-  async send(to, subject, html) {
+  async send({ to, subject, html }) {
     try {
       const result = await this.#instance.emails.send({
         from: env.RESEND_ADMIN_SENDER_EMAIL,

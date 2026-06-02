@@ -45,7 +45,7 @@ flowchart LR
   SMS["`**SMS Platform**
     (Twilio)
   `"]
-  SMS_USER["**Mobile Devices**"]
+  SMS_USER["`**Mobile Devices**`"]
 
   FE <-- API Request/Response --> BE
   BE <-- Email API --> EAAS
@@ -143,7 +143,7 @@ flowchart LR
   TWILIO_ACCOUNT_ID=your_twilio_account_sid_here
   TWILIO_AUTH_TOKEN=your_twilio_auth_token_here
   TWILIO_FROM_NUMBER=+1234567890
-  TWILIO_PHONE_NUMBER_REGISTERED=+84793506177
+  TWILIO_PHONE_NUMBER_REGISTERED=+84789456123
   ```
 
 - Step 4: Running
